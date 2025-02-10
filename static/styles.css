@@ -1,1 +1,42 @@
-x
+/* Default styles for desktops (1024px and above) */
+/* Master Styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Inter", sans-serif; 
+    background-color: #f8f9fa; 
+    color: #333; 
+    line-height: 1.6; 
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;  /* Default padding for smaller screens */
+}
+
+
+
+/* Tablets and smaller screens */
+@media (max-width: 1023px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Mobile screens (phones) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
