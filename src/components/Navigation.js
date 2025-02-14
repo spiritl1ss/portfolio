@@ -1,9 +1,16 @@
 import React from "react";
+import "../styles/Navigation.css";
 
 const Navigation = () => {
     return (
-        <nav className="navigation">
-            <div className="nav-wrapper">
+
+        <div className="nav-wrapper">
+            <div className="left-side">
+                <ul>
+                    <li><a href="">&lt;DEV&gt;</a></li>
+                </ul>
+            </div>
+            <div className="right-side">
                 <ul>
                     <li><a href="#about">Home</a></li>
                     <li><a href="#education">Education</a></li>
@@ -12,7 +19,8 @@ const Navigation = () => {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </nav>
+
+        </div>
     );
 };
 
