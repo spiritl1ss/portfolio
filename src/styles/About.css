@@ -1,12 +1,15 @@
 
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 3fr; 
-    align-items: flex-start; 
-    max-width: 1200px; 
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
     width: 100%;
-    margin: 150px auto; 
-    gap: 40px; 
+    height: 100vh; 
+    margin: 0 auto;
+    gap: 40px;
+    position: relative; 
 }
 
 
@@ -18,7 +21,6 @@
     border-radius: 50%;
     object-fit: cover;
 
-    /* Neon Glow */
     box-shadow: 
         0 0 10px #ff9900,  
         0 0 30px #ff6600,  
@@ -113,20 +115,41 @@
     color: white;
     font-size: medium;
     margin-top: 15px; 
+    margin-bottom: 10px;
 }
 
 
 /* Style Download CV Link */
-.about-text a {
+.about-text .cv-button {
     display: inline-block;
     text-decoration: none;
-    background-color: #007bff;
+    outline: 2px solid orangered;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
     transition: 0.3s;
 }
+
+/* Remove outline from all other links */
+.about-text a:not(.cv-button) {
+    color: #FF5F1F;
+    gap: 15px;
+}
+
+.about-links {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+}
+
+.icon-links {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+}
+
+
 
 .flag-icon {
     width: 20px; 
@@ -153,28 +176,33 @@
     margin-bottom: 20px;
 }
 
-/* Summary List Grid (New Grid Below the Summary) 
-.summary ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 Equal Columns 
-    gap: 20px; /* Adds spacing between items 
-    list-style-type: none;
-    padding: 0;
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+    cursor: pointer;
 }
 
-/* Individual List Items 
-.summary ul li {
-    background: rgba(255, 255, 255, 0.1); /* Light background for contrast 
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    color: white; /* Ensures text remains white 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-*/
 
+.glowing-arrow {
+    width: 70px;
+    height: 70px;
+    stroke: orangered;
+    filter: drop-shadow(0px 0px 8px orangered);
+    animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+/* Smooth Bounce Animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(10px);
+        opacity: 0.8;
+    }
+}
 
 
 
