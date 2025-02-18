@@ -5,8 +5,20 @@ const About = () => {
     return (
         <section id="experience">
             <h2>About me</h2>
+            <p> some text</p>
 
-            <h3>Text </h3>
+            <h3>Techstacks </h3>
+            <p> 
+                Languages, JavaScript, Pyhton, 
+                Frameworks
+                ReactJS, NextJs, Flask, ReactNativev
+                Backend
+                Node.js
+                Databases
+                SQL, Oracle SQL
+                Practices
+                DevOps, Agile
+            </p>
             <ul>
                 <li>Supervised team compliance with legal and company requirements.</li>
                 <li>Streamlined operational workflows and scheduling.</li>
