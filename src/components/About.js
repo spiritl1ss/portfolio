@@ -5,11 +5,12 @@ const About = () => {
     return (
         <section id="experience">
             <h2>About me</h2>
-            <p> some text</p>
+            <p> Graduate Software Engineer with a knack for building meaningful solutions, when i'm not immersed in code, you'll find me experimenting with cars & modification solutions. Always experimenting & learning. 
+            </p>
 
             <h3>Techstacks </h3>
             <p> 
-                Languages, JavaScript, Pyhton, 
+                Languages, JavaScript, Pyhton, C#
                 Frameworks
                 ReactJS, NextJs, Flask, ReactNativev
                 Backend
