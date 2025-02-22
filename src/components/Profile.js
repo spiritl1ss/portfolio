@@ -9,7 +9,7 @@ const Profile = () => {
     // smooth scroll until next page
     const scrollToNextSection = () => {
         window.scrollTo({
-            top: window.innerHeight, 
+            top: window.innerHeight,
             behavior: "smooth"
         });
     };
