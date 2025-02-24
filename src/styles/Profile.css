@@ -8,7 +8,6 @@
     justify-content: center; 
 }
 
-
 .profile-container {
     display: grid;
     grid-template-columns: 0.85fr 2.15fr; 
@@ -70,7 +69,6 @@
     color: #FF5F1F;
 }
 
-/* Location & Flag */
 .profile-content h5 {
     color: rgba(255, 255, 255, 0.7);
     font-size: 18px;
@@ -80,7 +78,6 @@
     display: inline-block;
 }
 
-/* Paragraph */
 .profile-content p {
     color: white;
     font-size: medium;
@@ -104,7 +101,6 @@
     color: #FF5F1F;
 }
 
-/* Links Section */
 .profile-links {
     display: flex;
     gap: 20px;
@@ -117,7 +113,6 @@
     align-items: center;
 }
 
-/* Icons */
 .flag-icon {
     width: 20px;
     height: auto;
@@ -141,7 +136,6 @@
     z-index: 10;
 }
 
-/* Glowing Animated Arrow */
 .glowing-arrow {
     width: 70px;
     height: 70px;
@@ -150,7 +144,6 @@
     animation: bounce 1.5s infinite alternate ease-in-out;
 }
 
-/* Smooth Bounce Animation */
 @keyframes bounce {
     0% {
         transform: translateY(0px);
@@ -162,7 +155,6 @@
     }
 }
 
-/* Responsive Grid */
 @media (max-width: 768px) {
     .profile-container {
         grid-template-columns: 1fr;

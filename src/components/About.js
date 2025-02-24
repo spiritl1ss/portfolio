@@ -16,14 +16,15 @@ import DevOpsIcon from "../assets/icons/azuredevops-original.svg";
 import AgileIcon from "../assets/icons/agile.png";
 import DockerIcon from "../assets/icons/docker-original.svg";
 import GitIcon from "../assets/icons/git-original.svg";
+import FigmaIcon from "../assets/icons/figma-original.svg";
 
 // array of objects
 const techStack = [
     { name: "Java", icon: JavaIcon, category: "Language" },
-    { name: "JavaScript", icon: JavaScriptIcon, category: "Language" },
     { name: "Python", icon: PythonIcon, category: "Language" },
     { name: "C#", icon: CSharpIcon, category: "Language" },
-    { name: "ReactJS", icon: ReactIcon, category: "Framework" },
+    { name: "JavaScript", icon: JavaScriptIcon, category: "Language" },
+    { name: "React", icon: ReactIcon, category: "Framework" },
     { name: "Next.js", icon: NextJsIcon, category: "Framework" },
     { name: "Flask", icon: FlaskIcon, category: "Framework" },
     { name: "Node.js", icon: NodeJsIcon, category: "Backend" },
@@ -32,7 +33,8 @@ const techStack = [
     { name: "DevOps", icon: DevOpsIcon, category: "Practice" },
     { name: "Agile", icon: AgileIcon, category: "Practice" },
     { name: "Docker", icon: DockerIcon, category: "Tool" },
-    { name: "Git", icon: GitIcon, category: "Tool" }
+    { name: "Git", icon: GitIcon, category: "Tool" },
+    { name: "Figma", icon: FigmaIcon, category: "UI" }
 ];
 
 const About = () => {
