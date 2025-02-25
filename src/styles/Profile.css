@@ -2,17 +2,16 @@
 #profile {
     position: relative;
     max-width: 1200px;
-    height: 100vh; /* Ensures full viewport height */
+    height: 100vh; 
     display: flex;
-    align-items: center; /* Centers vertically */
-    justify-content: center; /* Centers horizontally */
+    align-items: center; 
+    justify-content: center; 
 }
-
 
 .profile-container {
     display: grid;
-    grid-template-columns: 0.85fr 2.15fr; /* Adjusts spacing between the two columns */
-    align-self: center; /* Moves the grid container up */
+    grid-template-columns: 0.85fr 2.15fr; 
+    align-self: center; 
     transform: translateY(-80%);
 }
 
@@ -54,8 +53,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: auto; /* ✅ Prevents extra space */
-    max-height: 600px; /* ✅ Limits unnecessary stretching */
+    height: auto; 
+    max-height: 600px; 
 }
 
 .profile-content h1 {
@@ -70,7 +69,6 @@
     color: #FF5F1F;
 }
 
-/* Location & Flag */
 .profile-content h5 {
     color: rgba(255, 255, 255, 0.7);
     font-size: 18px;
@@ -80,7 +78,6 @@
     display: inline-block;
 }
 
-/* Paragraph */
 .profile-content p {
     color: white;
     font-size: medium;
@@ -104,7 +101,6 @@
     color: #FF5F1F;
 }
 
-/* Links Section */
 .profile-links {
     display: flex;
     gap: 20px;
@@ -117,7 +113,6 @@
     align-items: center;
 }
 
-/* Icons */
 .flag-icon {
     width: 20px;
     height: auto;
@@ -132,17 +127,15 @@
     vertical-align: middle;
 }
 
-/* ✅ Arrow is completely outside the grid */
 .scroll-arrow {
-    position: absolute; /* Makes sure it's not inside the grid */
+    position: absolute; 
     left: 50%;
-    bottom: 50%; /* Adjust height above the bottom */
+    bottom: 50%; 
     transform: translateX(-50%);
     cursor: pointer;
     z-index: 10;
 }
 
-/* Glowing Animated Arrow */
 .glowing-arrow {
     width: 70px;
     height: 70px;
@@ -151,7 +144,6 @@
     animation: bounce 1.5s infinite alternate ease-in-out;
 }
 
-/* Smooth Bounce Animation */
 @keyframes bounce {
     0% {
         transform: translateY(0px);
@@ -163,7 +155,6 @@
     }
 }
 
-/* ✅ Fix Responsive Grid */
 @media (max-width: 768px) {
     .profile-container {
         grid-template-columns: 1fr;

@@ -1,0 +1,142 @@
+#education {
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.education-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.education-holder {
+    position: relative;
+    padding: 25px;
+    background-color: #0A0A0A;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.vertical-line {
+    position: absolute;
+    left: 75px; 
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(-50%);
+    z-index: 1; 
+}
+
+.education-container h1 {
+    font-size: 45px;
+    color: #FF5F1F;
+    text-align: left;
+}
+
+.education-holder h2 {
+    font-size: 30px;
+    color: #FF5F1F;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.education-item:hover {
+    box-shadow: 0 0 15px rgba(209, 209, 209, 0.589);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.education-image {
+    position: relative;
+    width: 70px;
+    min-width: 70px;
+    z-index: 1;
+}
+
+.education-image img {
+    width: 70px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-content span {
+    font-size: 12px;
+    font-style: italic;
+    color: white;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.education-content h3 {
+    font-size: 18px;
+    color: white;
+    text-align: left;
+}
+
+.education-content p {
+    
+    color: #B3B3B3;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.modules-text {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .education-holder {
+        padding: 20px;
+    }
+
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .vertical-line {
+        display: none; 
+    }
+
+    .education-image img {
+        width: 50px;
+    }
+
+    .education-content h3 {
+        font-size: 16px;
+    }
+
+    .education-content p {
+        font-size: 13px;
+    }
+
+    .modules-text {
+        font-size: 10px;
+    }
+}
