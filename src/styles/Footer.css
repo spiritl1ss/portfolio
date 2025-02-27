@@ -1,0 +1,17 @@
+.footer {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    font-size: 14px;
+    margin-top: 0px; /* Creates spacing between content & footer */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+}

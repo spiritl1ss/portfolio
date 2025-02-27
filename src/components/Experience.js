@@ -12,19 +12,19 @@ const Experience = () => {
                 <h1>Experience</h1>
 
                 <div className="experience-tab-menu">
-                        <button
-                            className={activeTab === "work" ? "active" : ""}
-                            onClick={() => setActiveTab("work")}
-                        >
-                            Work Experience
-                        </button>
-                        <button
-                            className={activeTab === "relevant" ? "active" : ""}
-                            onClick={() => setActiveTab("relevant")}
-                        >
-                            Relevant Experience
-                        </button>
-                    </div>
+                    <button
+                        className={activeTab === "work" ? "active" : ""}
+                        onClick={() => setActiveTab("work")}
+                    >
+                        Work Experience
+                    </button>
+                    <button
+                        className={activeTab === "relevant" ? "active" : ""}
+                        onClick={() => setActiveTab("relevant")}
+                    >
+                        Relevant Experience
+                    </button>
+                </div>
                 <div className="experience-holder">
 
 

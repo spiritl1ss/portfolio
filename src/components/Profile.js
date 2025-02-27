@@ -17,18 +17,15 @@ const Profile = () => {
     return (
         <section id="profile">
             <div className="profile-container">
-                {/* Left Side - Profile Picture */}
                 <div className="profile-image">
                     <img src={profileImage} alt="Dawid Ogrodniczuk" />
                 </div>
 
-                {/* Right Side - Profile Content */}
                 <div className="profile-content">
                     <h1> Hello, I'm <span className="highlighted-text">Dawid <img src={waveEmoji} alt="Wave Emoji" className="wave-icon" /></span></h1>
                     <h5> 📍 Dorchester, United Kingdom<img src={ukFlag} alt="UK Flag" className="flag-icon" /></h5>
                     <p>Recent Software Engineering Graduate with practical experience in developing full-stack applications and a commitment to expanding technical knowledge.</p>
 
-                    {/* Links Section */}
                     <div className="profile-links">
                         <a href="/your_cv_link_here.pdf" download className="cv-button">Download CV</a>
                         <div className="social-icons">

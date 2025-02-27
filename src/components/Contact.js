@@ -1,12 +1,36 @@
 import React from "react";
+import "../styles/Contact.css";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
     return (
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-            <p>GitHub: <a href="https://github.com/yourgithub">github.com/yourgithub</a></p>
+            <div className="contact-container">
+                <div className="contact-content">
+                    <h1>
+                        Let's Get Connected
+                        <span className="underline"></span> 
+                    </h1>
+                    <p>
+                        Whether you’re an employer looking for a passionate developer or have an exciting opportunity to discuss, 
+                        I’d love to connect. Feel free to reach out through LinkedIn, GitHub, or email, and I’ll be happy to chat!
+                    </p>
+
+                    <a href="mailto:your@email.com" className="contact-button">Contact Me</a>
+
+                    <div className="social-icons">
+                        <a href="https://www.linkedin.com/in/dawid-ogrodniczuk/" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin size={30} />
+                        </a>
+                        <a href="https://github.com/spiritl1ss" target="_blank" rel="noopener noreferrer">
+                            <FaGithub size={30} />
+                        </a>
+                        <a href="mailto:your@email.com">
+                            <FaEnvelope size={30} />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };

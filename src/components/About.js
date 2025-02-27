@@ -52,7 +52,6 @@ const About = () => {
                     <h2>Stack</h2>
                 </div>
 
-                {/* Tech Stack Icons */}
                 <div className="techstacks">
                     <div className="techstack-grid">
                         {techStack.map((tech, index) => (
