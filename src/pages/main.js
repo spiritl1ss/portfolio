@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import "../styles/main.css"; // Ensure this contains the particle CSS
+import { motion } from "framer-motion";
+import "../styles/main.css";
 import Navigation from "../components/Navigation";
 import Profile from "../components/Profile";
 import About from "../components/About";
@@ -10,21 +11,27 @@ import Footer from "../components/Footer";
 
 const Main = () => {
     useEffect(() => {
-        const numParticles = 80; // Adjust number of particles
+        const numParticles = 200;
         const container = document.getElementById("particles-background");
 
         if (!container) return;
-
-        // Clear existing particles to prevent duplication
         container.innerHTML = "";
 
         for (let i = 0; i < numParticles; i++) {
             const particle = document.createElement("div");
             particle.className = "particle";
-            particle.style.top = `${Math.random() * 100}vh`;
-            particle.style.left = `${Math.random() * 100}vw`;
-            particle.style.animationDuration = `${Math.random() * 10 + 5}s`; // Random float speed
-            particle.style.animationDelay = `${Math.random() * 5}s`; // Staggered start
+
+            const topPosition = Math.random() * 100;
+            const leftPosition = Math.random() * 100;
+
+            const size = Math.random() * 6 + 2;
+            const opacity = Math.random() * 0.5 + 0.3;
+
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.top = `${topPosition}vh`;
+            particle.style.left = `${leftPosition}vw`;
+            particle.style.opacity = opacity;
 
             container.appendChild(particle);
         }
@@ -32,17 +39,23 @@ const Main = () => {
 
     return (
         <div className="main-container">
-            {/* Particle Background */}
             <div id="particles-background"></div>
 
             <div className="content-container">
                 <Navigation />
-                <Profile />
-                <About />
-                <Education />
-                <Experience />
-                <Contact />
-                <Footer />
+
+                {[Profile, About, Education, Experience, Contact, Footer].map((Component, index) => (
+                    <motion.section
+                        key={index}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 50 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: false, amount: 0.3 }}
+                    >
+                        <Component />
+                    </motion.section>
+                ))}
             </div>
         </div>
     );

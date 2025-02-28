@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/About.css";
 
-// Importing locally stored colored icons
 import JavaIcon from "../assets/icons/java-original.svg";
 import JavaScriptIcon from "../assets/icons/javascript-original.svg";
 import PythonIcon from "../assets/icons/python-original.svg";
@@ -18,7 +17,6 @@ import DockerIcon from "../assets/icons/docker-original.svg";
 import GitIcon from "../assets/icons/git-original.svg";
 import FigmaIcon from "../assets/icons/figma-original.svg";
 
-// array of objects
 const techStack = [
     { name: "Java", icon: JavaIcon, category: "Language" },
     { name: "Python", icon: PythonIcon, category: "Language" },
@@ -36,6 +34,7 @@ const techStack = [
     { name: "Git", icon: GitIcon, category: "Tool" },
     { name: "Figma", icon: FigmaIcon, category: "UI" }
 ];
+
 
 const About = () => {
     return (

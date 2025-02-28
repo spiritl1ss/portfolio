@@ -6,7 +6,6 @@ import waveEmoji from "../assets/Waving-Hand.png";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Profile = () => {
-    // smooth scroll until next page
     const scrollToNextSection = () => {
         window.scrollTo({
             top: window.innerHeight,
@@ -27,7 +26,7 @@ const Profile = () => {
                     <p>Recent Software Engineering Graduate with practical experience in developing full-stack applications and a commitment to expanding technical knowledge.</p>
 
                     <div className="profile-links">
-                        <a href="/your_cv_link_here.pdf" download className="cv-button">Download CV</a>
+                        <a href="/CV_Dawid.pdf" download="Dawid%20CV.pdf" className="cv-button">Download CV</a>
                         <div className="social-icons">
                             <a href="https://www.linkedin.com/in/dawid-ogrodniczuk/" target="_blank" rel="noopener noreferrer">
                                 <FaLinkedin size={30} />
@@ -35,7 +34,7 @@ const Profile = () => {
                             <a href="https://github.com/spiritl1ss" target="_blank" rel="noopener noreferrer">
                                 <FaGithub size={30} />
                             </a>
-                            <a href="mailto:your@email.com">
+                            <a href="mailto:dawidogrodniczuk@icloud.com">
                                 <FaEnvelope size={30} />
                             </a>
                         </div>
