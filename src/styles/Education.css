@@ -109,23 +109,37 @@
     margin-top: 5px;
 }
 
-@media (max-width: 768px) {
-    .education-holder {
+@media (max-width: 1024px) {
+    #education {
+        margin-top: 8%;
         padding: 20px;
     }
 
-    .education-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+    .education-container {
+        max-width: 95%;
+        padding: 15px;
     }
 
-    .vertical-line {
-        display: none; 
+    .education-container h1 {
+        font-size: 38px;
+    }
+
+    .education-holder h2 {
+        font-size: 26px;
+    }
+
+    .education-item {
+        gap: 15px;
+        padding: 12px;
+    }
+
+    .education-image {
+        width: 60px;
+        min-width: 60px;
     }
 
     .education-image img {
-        width: 50px;
+        width: 60px;
     }
 
     .education-content h3 {
@@ -133,10 +147,107 @@
     }
 
     .education-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    #education {
+        margin-top: 5%;
+        padding: 15px;
+    }
+
+    .education-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .education-container h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .education-holder h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .education-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .vertical-line {
+        display: none; 
+    }
+
+    .education-image {
+        width: 50px;
+        min-width: 50px;
+    }
+
+    .education-image img {
+        width: 50px;
+    }
+
+    .education-content h3 {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .education-content p {
         font-size: 13px;
+        text-align: left;
     }
 
     .modules-text {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #education {
+        margin-top: 5%;
+        padding: 10px;
+    }
+
+    .education-container {
+        padding: 5px;
+    }
+
+    .education-container h1 {
+        font-size: 26px;
+    }
+
+    .education-holder h2 {
+        font-size: 18px;
+    }
+
+    .education-item {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .education-image {
+        width: 40px;
+        min-width: 40px;
+    }
+
+    .education-image img {
+        width: 40px;
+    }
+
+    .education-content h3 {
+        font-size: 14px;
+    }
+
+    .education-content p {
+        font-size: 12px;
+    }
+
+    .modules-text {
+        font-size: 9px;
     }
 }

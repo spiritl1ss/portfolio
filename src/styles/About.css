@@ -85,20 +85,187 @@
     margin-top: 4px;
 }
 
-@media (max-width: 768px) {
-    .techstack-grid {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+@media (max-width: 1024px) {
+    #about {
+        height: auto; 
+        padding: 40px 20px;
     }
 
-    h1 {
-        font-size: 35px;
+    .about-container {
+        max-width: 95%;
+        padding: 15px;
     }
 
-    h2 {
-        font-size: 25px;
+    .about-text h1 {
+        font-size: 38px;
     }
 
-    p {
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
         font-size: 16px;
+    }
+
+    .techstack-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 30px 15px;
+        height: auto; 
+    }
+
+    .about-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-text h1 {
+        font-size: 30px;
+        text-align: center; 
+    }
+
+    .about-text h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .techstack-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+        gap: 10px;
+    }
+
+    .stack-item {
+        padding: 10px;
+    }
+
+    .stack-name {
+        font-size: 14px;
+    }
+
+    .stack-category {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #about {
+        height: auto; 
+        padding: 40px 20px;
+    }
+
+    .about-container {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .about-text h1 {
+        font-size: 38px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .techstack-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 30px 15px;
+        height: auto; 
+    }
+
+    .about-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-text h1 {
+        font-size: 30px;
+        text-align: center; 
+    }
+
+    .about-text h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .techstack-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+        gap: 10px;
+    }
+
+    .stack-item {
+        padding: 10px; 
+    }
+
+    .stack-name {
+        font-size: 14px;
+    }
+
+    .stack-category {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about {
+        padding: 20px 10px;
+    }
+
+    .about-container {
+        padding: 5px;
+    }
+
+    .about-text h1 {
+        font-size: 26px;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+    }
+
+    .techstack-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .stack-item {
+        padding: 8px;
+    }
+
+    .stack-name {
+        font-size: 12px;
+    }
+
+    .stack-category {
+        font-size: 10px;
     }
 }

@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ea4e795a.css",
+    "main.js": "/static/js/main.d787ebe7.js",
+    "static/js/488.9561f9b8.chunk.js": "/static/js/488.9561f9b8.chunk.js",
+    "static/media/xcelerate.png": "/static/media/xcelerate.e49c4067783d79b1a2e6.png",
+    "static/media/Profile3.jpg": "/static/media/Profile3.106ec3d12e13c5f82035.jpg",
+    "static/media/Ocean-Hackathon.png": "/static/media/Ocean-Hackathon.0083d1cc48df740f031f.png",
+    "static/media/WeymouthCollege.jpg": "/static/media/WeymouthCollege.4d335b4e2e62f5964fa2.jpg",
+    "static/media/BournemouthUniversity.jpg": "/static/media/BournemouthUniversity.7e5c9dcae2b0ed5b559f.jpg",
+    "static/media/Dominos.png": "/static/media/Dominos.69e2fc82bb968036dcd9.png",
+    "static/media/Waving-Hand.png": "/static/media/Waving-Hand.4541d8460b1564362561.png",
+    "static/media/GB-Flag.png": "/static/media/GB-Flag.a741a8c4135d80475ea6.png",
+    "static/media/project-experience-v2.png": "/static/media/project-experience-v2.04b4898c05dcd0507234.png",
+    "static/media/agile.png": "/static/media/agile.71c4e1dda0d44bdff20d.png",
+    "static/media/flask-original.svg": "/static/media/flask-original.c084b9349458e09e6559ca851f06e2b2.svg",
+    "static/media/docker-original.svg": "/static/media/docker-original.1d41320cb0101dbbc6fe182abd590263.svg",
+    "static/media/mysql-original.svg": "/static/media/mysql-original.60ec33723e9b175cb9581651f672b3fe.svg",
+    "static/media/react-original.svg": "/static/media/react-original.4e0c97009b885bfa75c5412262a46f5f.svg",
+    "static/media/python-original.svg": "/static/media/python-original.849d0b2b5f1ec20f077dd267498bd536.svg",
+    "static/media/nodejs-original.svg": "/static/media/nodejs-original.3eb147b0e1b7a5455b9bf254bc5884af.svg",
+    "static/media/java-original.svg": "/static/media/java-original.a751bad6c81431ab4dd6fa6632a65540.svg",
+    "static/media/oracle-original.svg": "/static/media/oracle-original.21a46ccd5ceb6379d6bc726cf65a756a.svg",
+    "static/media/javascript-original.svg": "/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
+    "static/media/csharp-original.svg": "/static/media/csharp-original.4b8080ff785d7bd4f1b95178568e9ba1.svg",
+    "static/media/git-original.svg": "/static/media/git-original.c08353563539c6459b353f29d8dd7bf2.svg",
+    "static/media/nextjs-original.svg": "/static/media/nextjs-original.2eee3ad3059ff52c5e34c5249e2da540.svg",
+    "static/media/azuredevops-original.svg": "/static/media/azuredevops-original.d4d01d94606751bad406d766260cd597.svg",
+    "index.html": "/index.html",
+    "static/media/figma-original.svg": "/static/media/figma-original.2c2c9d7ff067a3272fbcb7e4700d15a6.svg",
+    "main.ea4e795a.css.map": "/static/css/main.ea4e795a.css.map",
+    "main.d787ebe7.js.map": "/static/js/main.d787ebe7.js.map",
+    "488.9561f9b8.chunk.js.map": "/static/js/488.9561f9b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea4e795a.css",
+    "static/js/main.d787ebe7.js"
+  ]
+}
